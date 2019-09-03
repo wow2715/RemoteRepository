@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html >
 <html>
 <head>
 <link rel='stylesheet' href='${pageContext.request.contextPath}/css/style.css' />
@@ -17,8 +18,8 @@
 親愛的${mb.name}(帳號:${mb.id})<br>
 您已成功加入會員 ,謝謝
 
-</p>
-<a href='${pageContext.request.contextPath}/ch01/index.jsp'>回到會員管理</a>
+
+<a href="<c:url value='/ch01/index.jsp'/>">回到會員管理</a>
 
 </body>
 </html>

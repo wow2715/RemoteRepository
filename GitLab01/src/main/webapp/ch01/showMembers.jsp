@@ -34,7 +34,7 @@
 		</c:forEach>
 	</c:if>
 <p/>
-<a href='${pageContext.request.contextPath}/ch01/index.jsp'>回到會員管理</a>
+<a href="<c:url value='/ch01/index.jsp'/>">回到會員管理</a>
 </div>
 </body>
 </html>

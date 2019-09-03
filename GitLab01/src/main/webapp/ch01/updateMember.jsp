@@ -35,7 +35,7 @@
 <H1 class='center'>更新會員資料</H1>
 <hr>
 <p> 
-<Form class='center' Action="updateMember.do" method="POST" >
+<Form class='center' Action="<c:url value='/ch01/updateMember.do'/>" method="POST" >
     
     <input type="hidden" name="pk"     value="${mb.pk}" >
     <input type="hidden" name="id"     value="${mb.id}${param.id}" >
@@ -73,7 +73,7 @@
          </c:if>
 </Form>
 <p/>
-<small>&lt;&lt;<a href="queryMember.do">回上一頁</a>&gt;&gt;</small>
+<small>&lt;&lt;<a href="<c:url value='/ch01/queryMember.do'/>">回上一頁</a>&gt;&gt;</small>
 </div>
 </body>
 
